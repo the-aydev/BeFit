@@ -11,6 +11,7 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 };
 
+
 var swiper = new Swiper(".home-slider", {
   spaceBetween: 20,
   effect: "fade",

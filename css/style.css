@@ -42,7 +42,7 @@ section {
 
 .heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -99,7 +99,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 9%;
-  z-index: 1000;
+  z-index: 10000;
   background: #000;
 }
 
@@ -133,14 +133,14 @@ section {
 
 .home {
   padding: 0;
-  margin-top: 6.5rem;
+  margin-top: 5rem;
 }
 
 .home .slide {
   min-height: 70vh;
   background-size: cover !important;
   background-position: center !important;
-  padding: 9%;
+  padding: 2rem 9%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,6 +729,7 @@ section {
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+    scroll-padding: 7rem;
   }
   .header {
     padding: 0 2rem;
@@ -768,8 +769,8 @@ section {
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .navbar.active {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .header .navbar a {
     display: block;
